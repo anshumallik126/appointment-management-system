@@ -260,6 +260,11 @@ a {
   color: #008000 !important;
 }
 
+@media only screen and (max-width : 576px) {
+  .text-left-sm {
+    text-align: left !important;
+  }
+}
 /*********************************************************************************************************************************/
 /******************************************************* O.V.E.R.R.I.D.E.S *******************************************************/
 /*********************************************************************************************************************************/
@@ -784,7 +789,7 @@ ul.clean {
   position: static;
   width: 100%;
   z-index: 99;
-  background: #1e241e;
+  background: #1b2026;
   top: 0px;
 }
 @media only screen and (max-width : 576px) {
@@ -832,7 +837,7 @@ ul.clean {
 .nav-section .nav-wrapper {
   z-index: 1022;
   position: fixed;
-  background: #fff;
+  background: #000;
   height: 100%;
   top: 0;
   right: 0;
@@ -873,6 +878,9 @@ ul.clean {
 }
 .nav-section .nav-wrapper.toggle .navigation li:hover a::after {
   opacity: 0;
+}
+.nav-section .nav-wrapper .close {
+  color: #fff;
 }
 .nav-section.onscroll {
   background: #dbf0fb;
@@ -1525,7 +1533,7 @@ ul.clean {
     display: flex !important;
   }
   .user-dashboard .wrapper .left-sidebar .nav-tabs .nav-link {
-    flex: 0 0 16.66%;
+    flex: 0 0 20%;
     text-align: center;
   }
   .user-dashboard .wrapper .left-sidebar .nav-tabs .nav-link i {
@@ -1676,8 +1684,18 @@ ul.clean {
   align-items: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+@media only screen and (max-width : 576px) {
+  .dashboard-inner .profile-summary-card {
+    display: block;
+  }
+}
 .dashboard-inner .profile-summary-card h4 {
   font-weight: 600;
+}
+@media only screen and (max-width : 576px) {
+  .dashboard-inner .profile-summary-card h4 {
+    font-size: 16px;
+  }
 }
 .dashboard-inner .profile-summary-card h5 {
   font-size: 28px;

@@ -38,14 +38,14 @@ $pageName  = 'user-dashboard';
                                     <h4 class="mb-1 text-white">Welcome back, Dr. Smith 👋</h4>
                                     <p class="mb-0 text-white">Here’s your appointment overview for today</p>
                                 </div>
-                                <div class="text-right">
+                                <div class="text-right text-left-sm">
                                     <h5>12</h5>
                                     <span>Appointments Today</span>
                                 </div>
                             </div>
 
-                            <div class="row dashboard-stats mb-4">
-                                <div class="col-md-3">
+                            <div class="row dashboard-stats">
+                                <div class="col-md-3 mb-4">
                                     <div class="stat-card">
                                         <h6>Total Patients</h6>
                                         <h3>1,240</h3>
@@ -53,7 +53,7 @@ $pageName  = 'user-dashboard';
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 mb-4">
                                     <div class="stat-card">
                                         <h6>Today's Appointments</h6>
                                         <h3>12</h3>
@@ -61,7 +61,7 @@ $pageName  = 'user-dashboard';
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 mb-4">
                                     <div class="stat-card">
                                         <h6>Completed Appointments</h6>
                                         <h3>856</h3>
@@ -69,7 +69,7 @@ $pageName  = 'user-dashboard';
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-3 mb-4">
                                     <div class="stat-card">
                                         <h6>Total Revenue</h6>
                                         <h3>$14,580</h3>
@@ -250,7 +250,7 @@ $pageName  = 'user-dashboard';
                     <div class="tab-pane fade" id="nav-myorder" role="tabpanel" aria-labelledby="nav-myorder-tab">
 
                         <div class="bread px-4">
-                            <a class="text-orange" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
+                            <a class="text-primary" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
                             <span>My
                                 Bookings</span>
                         </div>
@@ -264,9 +264,8 @@ $pageName  = 'user-dashboard';
                                 </select>
                                 <input style="height: 42px;" type="text" class="form-control mx-3 border-style-custom"
                                     placeholder="Booking Date" id="bookingDate">
-                                <button class="theme-btn bg-orange text-capitalize">Search</button>
-                                <button class="theme-btn bg-orange ml-2 reset-input-btn"><i
-                                        class="fa fa-redo-alt"></i></button>
+                                <button class="theme-btn text-capitalize">Search</button>
+                                <button class="theme-btn ml-2 reset-input-btn"><i class="fa fa-redo-alt"></i></button>
                             </form>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -419,13 +418,13 @@ $pageName  = 'user-dashboard';
                     </div>
                     <div class="tab-pane fade" id="nav-mycard" role="tabpanel" aria-labelledby="nav-mycard-tab">
                         <div class="bread px-4">
-                            <a class="text-orange" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
+                            <a class="text-primary" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
                             <span>Gift
                                 Cards</span>
                         </div>
                         <div class="mycard-inner px-4 my-4">
                             <div class="d-flex justify-content-end mb-4">
-                                <button class="theme-btn bg-orange ml-2 add-new-card-info-btn" data-toggle="modal"
+                                <button class="theme-btn ml-2 add-new-card-info-btn" data-toggle="modal"
                                     data-target="#add-new-card-info-modal"><i class="fa fa-plus mr-2"></i>Add
                                     New</button>
                             </div>
@@ -504,7 +503,7 @@ $pageName  = 'user-dashboard';
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <div class="bread px-4">
-                            <a class="text-orange" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
+                            <a class="text-primary" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
                             <span>My
                                 Profile</span>
                         </div>
@@ -779,7 +778,7 @@ $pageName  = 'user-dashboard';
                     </div>
                     <div class="tab-pane fade" id="nav-password" role="tabpanel" aria-labelledby="nav-password-tab">
                         <div class="bread px-4">
-                            <a class="text-orange" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
+                            <a class="text-primary" href="#">Home <i class="fa fa-chevron-right mx-2"></i></a>
                             <span>Change Password</span>
                         </div>
                         <div class="address-inner px-4 my-4">
@@ -825,8 +824,7 @@ $pageName  = 'user-dashboard';
                                     <div class="response-text text-center mb-3 mx-3 py-2 px-3 d-none"></div>
 
                                     <div class="col-12 py-2">
-                                        <button
-                                            class="theme-btn bg-orange px-5 py-2 password-update-btn">Update</button>
+                                        <button class="theme-btn px-5 py-2 password-update-btn">Update</button>
                                     </div>
                                 </div>
                             </form>

@@ -19,7 +19,7 @@
 					display: flex !important
 
 					.nav-link
-						flex: 0 0 16.66%
+						flex: 0 0 20%
 						text-align: center
 
 						i
@@ -153,8 +153,12 @@
 		justify-content: space-between
 		align-items: center
 		box-shadow: 0 8px 20px rgba(0,0,0,0.08)
+		@media #{$small-only}
+			display: block
 		h4
 			font-weight: 600
+			@media #{$small-only}
+				font-size: 16px
 		h5
 			font-size: 28px
 			margin-bottom: 0

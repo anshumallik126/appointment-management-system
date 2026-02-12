@@ -33,18 +33,15 @@
     <div class="header">
         <section class="nav-section py-3">
             <div class="container">
+                <div class="logo">
+                    <a href="index.php">
+                        <img src="img/logo.png" alt="AMS Logo" class="logo-img">
+                    </a>
+                </div>
                 <div class="nav-wrapper">
                     <div class="close" id="close"><i class="fa fa-times"></i></div>
-                    <div class="logo d-flex align-items-center">
-                        <a href="index.php" class="align-items-center">
-                            <img src="img/logo.png" alt="AMS Logo" class="logo-img">
-                        </a>
-                    </div>
                 </div>
                 <ul class="list-unstyled nav-icons mb-0 pt-1 pt-lg-0">
-                    <!-- <li><span class="d-inline-block menu-icon-bar"><i
-                                class="fa fa-bars text-color fa-2x mr-3"></i></span>
-                    </li> -->
                     <li class="header-right">
                         <div class="header-icon">
                             <i class="fa fa-bell"></i>
