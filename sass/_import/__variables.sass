@@ -1,0 +1,100 @@
+@use 'sass:color'
+
+// F.O.N.T.S
+$font-heading: 'Marcellus', serif
+$font-body: "Jost", sans-serif
+// C.O.L.O.R.S
+
+$color-dark-blue: #93242a
+$color-light-blue: color.mix(white, $color-dark-blue, 20%)
+$color-red: #e92026
+$color-font: rgba(0, 0, 0, .7)
+$color-main-text: #111
+// Color Light
+$color-light: #C3C3C3
+$color-lighter: #E8E8E8
+$color-lightest: #f7f9fc
+$color-transparent: rgba(255, 255, 255, 0.2)
+$font-transparent: rgba(255, 255, 255, 0.6)
+// Color Dark€
+$color-dark: #929292
+$color-darker: #626262
+$color-darkest: #272727
+$color-gray: #b2b2b2
+// Color Primary
+
+$color-yellow: #f7941f
+// $color-primary: rgb(26, 35, 126)
+$color-primary: #008000
+$color-primary-light: #dbf0fb
+$color-primary-lighter: color.mix(white, $color-primary, 15%)
+$color-primary-lightest: color.mix(white, $color-primary, 25%)
+$color-primary-dark: color.mix(black, $color-primary, 5%)
+$color-primary-darker: color.mix(black, $color-primary, 15%)
+$color-primary-darkest: color.mix(black, $color-primary, 25%)
+$color-primary-alt: #F9FBFF
+$color-primary-mid: #3d8bf1
+$white: #fff
+$yellow: #fcb302
+$color-text: #0c3c54
+// Color Secondary
+// $color-secondary: #2576FD
+$color-secondary: rgba(146, 42, 11, 0.9)
+$color-secondary-transparent: rgba(109, 19, 25, 0.9)
+$color-tertiary: #CC5052
+// C.o.l.o.r B.l.u.e
+$color-blue: #3a5f8e
+$color-secondary-light: color.adjust($color-secondary, $lightness: 10%)
+$color-secondary-lighter: color.adjust($color-secondary, $lightness: 20%)
+$color-secondary-lightest: color.adjust($color-secondary, $lightness: 30%)
+// C.o.l.o.r G.r.e.e.n
+$color-green: #2dcc70
+$color-green-dark: color.mix(black, $color-green, 15%)
+$color-green-darker: color.mix(black, $color-green, 15%)
+$color-green-darkest: color.mix(black, $color-green, 30%)
+// C.o.l.o.r O.r.a.n.g.e
+$color-orange: #b9830f
+$color-orange-light: #fee2b3
+$color-orange-dark: color.mix(black, $color-orange, 5%)
+$color-orange-darker: color.mix(black, $color-orange, 15%)
+$color-orange-darkest: color.mix(black, $color-orange, 30%)
+// C.o.l.o.r R.e.d
+$color-red: #CC0000
+// C.o.l.o.r T.o.m.a.t.o
+$color-tomato: #AB3F1B
+// C.o.l.o.r F.a.c.e.b.o.o.k
+$color-facebook: #4267B2
+$color-twitter: #00acee
+// C.o.l.o.r G.o.o.g.l.e
+$color-google: #DB4437
+
+// C.o.l.o.r E.r.r.o.r
+$color-error: #dc3545
+// Color user active
+// $color-user-active: #8ec350
+$color-user-active: #2BAC76
+// Color Headings
+$color-heading: #191919
+
+// G.U.T.T.E.R
+// Gutter general
+$gutter-general: 16px
+
+// B.O.R.D.E.R - R.A.D.I.U.S
+$radius-general: 2px
+$radius-medium: 3px
+$radius-large: 4px
+
+$form-control-border-radius: 3rem
+
+// T.R.A.N.S.I.T.I.O.N
+// Transition duration general
+$transition-duration-general: 0.3s
+// Transition timing function general
+$transition-timing-function-general: ease-out
+// Transition general
+$transition-general: all $transition-duration-general $transition-timing-function-general
+// Transition duration fast
+$transition-duration-fast: 0.2s
+// Transition slide-in-out
+$transition-slide-in-out: $transition-duration-fast $transition-timing-function-general

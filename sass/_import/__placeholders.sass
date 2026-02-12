@@ -1,0 +1,13 @@
+@use '_mixins' as *
+
+// Background Image Cover
+%background-cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+
+%box-shadow-nav
+	@include box-shadow(0 2px 16px 0 rgba(0, 0, 0, .12))
+
+%box-shadow-nav-dark
+	@include box-shadow(0 2px 16px 0 rgba(0, 0, 0, .2))

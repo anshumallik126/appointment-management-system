@@ -1,0 +1,184 @@
+/**************************************************************************************************/
+/****************************************** G.E.N.E.R.A.L ******************************************/
+/***************************************************************************************************/
+@use 'sass:color'
+@use '_import/_variables' as *
+@use '_import/_media-query' as *
+@use '_import/_mixins' as *
+
+.btn-like-a
+	border: none
+	outline: none
+	box-shadow: none
+	&:focus
+		box-shadow: none
+		outline: none
+.theme-color
+	color: color.adjust($color-secondary, $lightness: 5%) !important
+
+.text-orange
+	color: $color-orange
+
+/***************************************************************************************************/
+/****************************************** G.E.N.E.R.A.L ******************************************/
+/**************************************************************************************************/
+
+.theme-btn
+	border-radius: 25px
+	background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-primary)
+	&:hover
+		background-position: 100% 0
+
+.bg-orange
+	background: $color-secondary !important
+
+	&.btn
+		box-shadow: none
+
+		&:hover
+			background: $color-secondary !important
+.bg-white
+	background: white !important
+
+.fa-2x
+	font-size: 1.3em
+.action
+	.remove-btn
+		border: none
+		background: none
+
+		&:focus
+			outline: none
+
+.cs-scrollbar
+	overflow-y: auto
+	overflow-x: hidden
+
+	&::-webkit-scrollbar
+		width: 5px
+		background: #E2E2E2
+		border-radius: 5px
+
+	&::-webkit-scrollbar-thumb
+		background: #BCBCBC
+		border-radius: 5px
+		border-radius: 5px
+
+	@media #{$small-only}
+		&::-webkit-scrollbar
+			width: 2px
+
+.cs-validation
+	.field .ui.prompt.label
+		border: none !important
+		background: none !important
+		color: $color-error !important
+
+.response-text
+	font-size: 16px
+
+	&.error
+		background: #dc354514
+		color: #dc3545
+
+		p
+			color: #dc3545 !important
+
+	&.success
+		background: #28a74526
+		color: #28a745
+
+		p
+			color: #28a745
+
+.badge-secondary
+	font-size: 75%
+
+.badge-warning
+	box-shadow: none
+	outline: none
+	&:hover, &:focus
+		background: color.adjust($color-orange, $lightness: -10%) !important
+		box-shadow: none !important
+		outline: none
+.text-error
+	color: $color-error
+
+.user-dashboard
+	height: calc(100vh - 70px)
+
+	.wrapper
+		.left-sidebar.h-100
+			background: #1b2026
+
+.username
+	position: relative
+
+	&:hover
+		.sub-menu
+			top: calc(100% + 10px)
+			opacity: 1
+			visibility: visible
+
+	.user-sub
+		display: block
+
+	.sub-menu
+		position: absolute
+		top: 130%
+		left: -30px
+		background: white
+		min-width: 160px
+		padding: 10px
+		transition: .3s
+		opacity: 0
+		visibility: hidden
+		box-shadow: 1px 1px 5px rgb(0 0 0 / 10%)
+		line-height: 24px
+		z-index: 99
+
+		@media #{$medium-and-down}
+			left: unset
+			right: -40px
+
+		@media #{$extra-large-and-down}
+
+		a
+			color: $color-darker
+			display: block
+			padding: 5px 10px
+			font-size: 1rem
+
+			i
+				min-width: 20px
+				text-align: center
+
+			&:hover
+				color: $color-primary
+
+.input-group
+	.psw-show-btn
+		position: absolute
+		top: 8px
+		right: 8px
+		z-index: 5
+		background: none
+
+input::-ms-reveal,
+input::-ms-clear
+	display: none
+
+.ui.form .field.error .input, .ui.form .field.error label, .ui.form .fields.error .field .input, .ui.form .fields.error .field label
+	color: #dc3545 !important
+
+.modal-backdrop
+	z-index: 999
+
+@media only screen and (max-width: 767px)
+	.modal .modal-header button
+		display: inline-flex
+
+@media only screen and (max-width: 576px)
+	.modal .modal-header button
+		color: #fff !important
+		background: $color-primary !important
